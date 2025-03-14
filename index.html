@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Art Painting Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="gameModeSelection">
+  <h1>Pixel Art Painting Game</h1>
+  <button onclick="startFreeplay()">Freeplay Mode</button>
+  <button onclick="startLevels()">Levels Mode</button>
+</div>
+
+<div id="canvasContainer">
+  <canvas id="pixelCanvas" width="400" height="400"></canvas>
+</div>
+
+<div id="toolbar">
+  <input type="color" id="colorPicker">
+  <button onclick="clearCanvas()">Clear Canvas</button>
+  <button onclick="undo()">Undo</button>
+</div>
+
+<div id="levelInstructions">
+  <h3 id="levelTitle"></h3>
+  <img id="targetImage" alt="Target Pixel Art" />
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>
